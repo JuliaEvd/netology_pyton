@@ -1,4 +1,4 @@
-import json
+﻿import json
 import xml.etree.ElementTree as ET
 
 
@@ -36,4 +36,4 @@ for item in news_list:
     xml_descriptions += item.find('description').text.lower()
 
 print(print_sorted_data(json_descriptions, 6, 10))
-print(print_sorted_data(json_descriptions, 6, 10))
+print(print_sorted_data(xml_descriptions, 6, 10))
